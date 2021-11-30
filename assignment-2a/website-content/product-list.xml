@@ -5,7 +5,7 @@
     <ProductName>Avocado</ProductName>
     <Price>1.5</Price>
     <Unit>pc</Unit>
-    <Discount>0.2</Discount>
+    <Discount>-20%</Discount>
     <Description>Organic avocado hass. Ripe.</Description>
     <Origin>Peru</Origin>
     <Brand>Sunny Farm</Brand>
@@ -19,7 +19,7 @@
     <ProductName>Salmon</ProductName>
     <Price>16.5</Price>
     <Unit>kg</Unit>
-    <Discount>0.3</Discount>
+    <Discount>-30%</Discount>
     <Description>Raw  salmon. 69% water, 20% protein, 6% fat.</Description>
     <Origin>Brandenburg</Origin>
     <Brand>Sea Farm</Brand>
@@ -61,7 +61,7 @@
     <ProductName>Gouda Cheese</ProductName>
     <Price>1.15</Price>
     <Unit>kg</Unit>
-    <Discount>0.2</Discount>
+    <Discount>-20%</Discount>
     <Description>Young cheese with creamy flavour</Description>
     <Origin>Cottbus</Origin>
     <Brand>Bauers</Brand>
@@ -201,7 +201,7 @@
     <ProductName>Eggs</ProductName>
     <Price>3.2</Price>
     <Unit>10pc</Unit>
-    <Discount>0</Discount>
+    <Discount>-10%</Discount>
     <Description>Organic eggs from free ranged chickens</Description>
     <Origin>Cottbus</Origin>
     <Brand>Farmer Joe</Brand>
@@ -215,7 +215,7 @@
     <ProductName>Spinach</ProductName>
     <Price>2.4</Price>
     <Unit>kg</Unit>
-    <Discount>0</Discount>
+    <Discount>-5%</Discount>
     <Description>Prewashed organic spinach. Pesticide-free.</Description>
     <Origin>Cottbus</Origin>
     <Brand>Meiyers</Brand>
@@ -229,7 +229,7 @@
     <ProductName>Cheddar Cheese</ProductName>
     <Price>4</Price>
     <Unit>kg</Unit>
-    <Discount>0.15</Discount>
+    <Discount>-15%</Discount>
     <Description>Strong flavour</Description>
     <Origin>Cottbus</Origin>
     <Brand>Bauers</Brand>
@@ -243,7 +243,7 @@
     <ProductName>Goat Cheese</ProductName>
     <Price>7</Price>
     <Unit>kg</Unit>
-    <Discount>0.2</Discount>
+    <Discount>-20%</Discount>
     <Description>30% fat</Description>
     <Origin>Cottbus</Origin>
     <Brand>Bauers</Brand>
