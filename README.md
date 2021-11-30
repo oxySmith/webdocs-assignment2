@@ -1,6 +1,6 @@
 # webdocs-assignment2
 </br>
-Group 5 Web developers: Maria Konrad(oxySmith), Sze Hei Li(li-btu)</br>
-Business description: business_description.html</br>
-Website requirements: website_requirements.html</br>
-Website content: website_content.html</br>
+Clients(Group 5): Maria Konrad(oxySmith), Sze Hei Li(li-btu)</br>
+Developers(Group 3): Bilal Koraish(Billy007p), Olamilekan Korede Koku()</br>
+Business description: assignment2a/Business-description.html</br>
+Website content: assignment2a/website-content/webpages-list.html</br>
