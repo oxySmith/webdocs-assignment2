@@ -1,7 +1,7 @@
 # webdocs-assignment2
 </br>
 Clients(Group 5): Maria Konrad(oxySmith), Sze Hei Li(li-btu)</br>
-Developers(Group 3): Bilal Koraish(Billy007p), Olamilekan Korede Koku()</br>
+Developers(Group 3): Bilal Koraish(Billy007p), Olamilekan Korede Koku(Lakeside213)</br>
 Chosen domain name: www.cottbus.delivery</br>
 Domain checker: https://www.name.com/domain/search/cottbus.delivery</br>
 Business description & website requirements: assignment2a/Business-description.html or assignment2a/Business description.pdf. The contents of the two files are the same but just in different formats.</br>
