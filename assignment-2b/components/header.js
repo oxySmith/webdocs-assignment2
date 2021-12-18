@@ -16,6 +16,7 @@ template.innerHTML= `
         align-items: center;
         font-size: 2rem;
         color: #000;
+        font-weight: 600;
         text-decoration: none;
     }
 
@@ -31,6 +32,7 @@ template.innerHTML= `
     .header_link{
         color: #fff;
         text-decoration: none;
+        font-weight: 600;
     }
     .header_link.active{
         text-decoration: underline;
