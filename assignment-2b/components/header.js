@@ -1,6 +1,6 @@
 
 
-const template = document.createElement('template')
+var template = document.createElement('template')
 template.innerHTML= `
     <style>
     header{
@@ -8,7 +8,7 @@ template.innerHTML= `
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0rem 0.5rem;
+        padding: 0rem 1rem;
 
     }
     header .logo{
