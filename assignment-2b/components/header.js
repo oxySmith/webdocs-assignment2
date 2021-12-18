@@ -55,7 +55,7 @@ template.innerHTML= `
         margin: 6px 0;
     }
       
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 892px) {
         .header_links{
             display:none;
         }
