@@ -11,12 +11,20 @@ template.innerHTML= `
         padding: 0rem 0.5rem;
 
     }
+    header .logo{
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        color: #000;
+        text-decoration: none;
+    }
+
     .header_logo{
-        height: 8rem;
-        width: 8rem;
+        height: 7rem;
+        width: 7rem;
     }
     .header_links{
-        flex-basis: 70%;
+        flex-basis: 57%;
         display: flex;
         justify-content: space-evenly;
     }
@@ -112,7 +120,8 @@ font-size: 60px;
     </style>
     <header class="header">
         <a href="#default" class="logo">
-            <img class="header_logo" src="images/logo/white.png"
+            <img class="header_logo" src="images/logo/white.png" />
+            Cottbus Delivery
         </a>
         <div class="header_links">
             <a class="header_link active" href="#home">Home</a>
