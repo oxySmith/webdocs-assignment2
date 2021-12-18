@@ -1,0 +1,8 @@
+* {
+    /* ↓ Now literally all elements display a sans-serif font */
+    font-family: Helvetica;
+  }
+
+body{
+    margin: 0;
+}
