@@ -83,7 +83,6 @@ template.innerHTML= `
         top: 25%; /* 25% from the top */
         width: 100%; /* 100% width */
         text-align: center; /* Centered text/links */
-        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
     }
 
     /* The navigation links inside the overlay */
@@ -148,10 +147,13 @@ template.innerHTML= `
 
         <!-- Overlay content -->
         <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a class="header_link active" href="#home">Home</a>
+            <a class="header_link" href="#contact">About </a>
+            <a class="header_link" href="#about">Discounts </a>
+            <a class="header_link" href="#about">Products </a>
+            <a class="header_link" href="#about">Delivery </a>
+            <a class="header_link" href="#about">Recipes </a>
+            <a class="header_link" href="#about">Contact us</a>
         </div>
 
     </div>
