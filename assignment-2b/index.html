@@ -7,17 +7,51 @@
     <title>Web Components Example</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body>
     <app-header></app-header> 
-    <h3>Hello World</h3>
+    <app-body>
+        <hero-image 
+            header="Discount of the week!" 
+            text="A variety of cheese from local farms is on sale, including cheese for cheese fondue, raclette and many more
+            other delicious dishes... Don't miss the chance!"
+            btn-text="View discounts"
+            btn-link="#"
+            bg="foodstore"
+        >
+        </hero-image>
+        <hero-image 
+            header="Christmas Food Ideas!" 
+            text="Looking for new dishes for this Christmas? We have some simple but tasty food ideas that you and your loved ones will probably love!"
+            btn-text="View Recipes"
+            btn-link="#"
+            bg="foodstore2"
+        >
+        </hero-image>
+        <section>
+            <div class="section-header"><h2>Most frequently bought items</h2></div>
+            <div class="grid-section">
+                <product-card name="Avocado" price="$1.50" discount="-20%"></product-card>
+                <product-card name="Tomato" price="$1.50"></product-card>
+                <product-card name="Avocado" price="$1.50" discount="-20%"></product-card>
+                <product-card name="Tomato" price="$1.50"></product-card>
+                <product-card name="Avocado" price="$1.50" discount="-20%"></product-card>
+                <product-card name="Tomato" price="$1.50"></product-card>
+                <product-card name="Avocado" price="$1.50" discount="-20%"></product-card>
+                <product-card name="Tomato" price="$1.50"></product-card>
+                <product-card name="Avocado" price="$1.50" discount="-20%"></product-card>
+                <product-card name="Tomato" price="$1.50"></product-card>
+            </div>
+        </section>
+    </app-body>
     <app-footer></app-footer>
-    <product-card name="Avocado" price="$1.50" discount="-20%"></product-card>
-    <product-card name="Tomato" price="$1.50"></product-card>
+    
+   
     <script src="components/header.js"></script>
     <script src="components/footer.js"></script>
     <script src="components/productCard.js"></script>
+    <script src="components/heroImage.js"></script>
+    <script src="components/appBody.js"></script>
     <!-- <script src="components/userCard.js"></script> -->
     
 </body>

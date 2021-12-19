@@ -2,7 +2,7 @@ var template = document.createElement('template')
 template.innerHTML= `
     <style>
         footer{
-            padding: 2.5rem 1rem;
+            padding: 3rem 2rem;
             font-weight:300;
             background-color: #f1f1f1;
         }
