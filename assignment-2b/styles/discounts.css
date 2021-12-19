@@ -1,0 +1,25 @@
+.birthday_box{
+    display: flex;
+    border: solid;
+    padding: 2rem;
+}
+
+.birthday_box img{
+    width: 35%;
+}
+
+.birthday_box h2{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.birthday_box_info{
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .birthday_box img{
+        display: none;
+    }
+    
+  }
