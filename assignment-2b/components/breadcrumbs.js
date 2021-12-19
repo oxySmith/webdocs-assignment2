@@ -1,43 +1,38 @@
 var template = document.createElement('template')
 template.innerHTML= `
     <style>
-    /* Style the list */
-    ul.breadcrumb {
-      padding: 10px 16px;
-      list-style: none;
-      background-color: #eee;
-    }
-    
-    /* Display list items side by side */
-    ul.breadcrumb li {
-      display: inline;
-      font-size: 18px;
-    }
-    
-    /* Add a slash symbol (/) before/behind each list item */
-    ul.breadcrumb li+li:before {
-      padding: 8px;
-      color: black;
-      content: "/\00a0";
-    }
-    
-    /* Add a color to all links inside the list */
-    ul.breadcrumb li a {
-      color: #0275d8;
-      text-decoration: none;
-    }
-    
-    /* Add a color on mouse-over */
-    ul.breadcrumb li a:hover {
-      color: #01447e;
-      text-decoration: underline;
-    }
+        .breadcrumb ul {
+            display: flex;
+            list-style: none;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-inline-start: 0;
+            margin-bottom: 1rem;
+        }
+            
+        .breadcrumb li::before {
+            content: ">";
+            margin-right: 0.2rem;
+            margin-left: 0.2rem;
+        }
+            
+        .breadcrumb li:first-child::before {
+            content: "";
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: 600;
+        }
     </style>
-    <ul class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li id="product"></li>
-    </ul>
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li id="product"></li>
+        </ul>
+    </nav>
+    
 `
 
 class Breadcrumbs extends HTMLElement {
@@ -51,4 +46,4 @@ class Breadcrumbs extends HTMLElement {
 
 }
 
-window.customElements.define('breadcrumbs', Breadcrumbs)
+window.customElements.define('app-crumbs', Breadcrumbs)

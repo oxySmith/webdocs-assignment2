@@ -59,12 +59,12 @@ template.innerHTML= `
        <div class="footer_top_section">
             <div class="footer_info_container">
                 <div class="footer_info">
-                    <img class="footer_img" src="images/logo/yellow.jpeg" />
+                    <img id="footer_logo" class="footer_img" src="images/logo/yellow.jpeg" />
                     <span>Cottbus Delivery</span>
                 </div>
                 <div class="footer_social">
-                    <img src="images/instagram.svg" />
-                    <img src="images/facebook.svg" />
+                    <img id="insta" class="class="footer_social_insta" src="images/instagram.svg" />
+                    <img id="face" class="class="footer_social_face" src="images/facebook.svg" />
                 </div>
             </div>
             <div class="footer_work">
@@ -84,7 +84,20 @@ class AppFooter extends HTMLElement {
         this.showInfo=true;
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
+
+        // this.setImages();
     }
+
+    // setImages(){
+    //     const link =  window.location.href;
+    //     if(link.includes("/products/")){
+    //         const images = ["footer_logo","insta","face"]
+    //         images.map((image) => {
+    //             const imagePath = this.shadowRoot.getElementById(image).src;
+    //             this.shadowRoot.getElementById(image).src = imagePath.replace("/products/", "/");
+    //         })
+    //     }
+    // }
 }
 
 window.customElements.define('app-footer', AppFooter)

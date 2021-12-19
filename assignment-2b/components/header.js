@@ -162,7 +162,8 @@ class AppHeader extends HTMLElement {
         this.showInfo=true;
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
-        this.active()
+        this.active();
+        // this.setImages();
     }
 
     active(){
@@ -190,6 +191,16 @@ class AppHeader extends HTMLElement {
             this.shadowRoot.getElementById("contact").classList.add("active");
         }
     }
+
+    // setImages(){
+    //     const link =  window.location.href;
+    //     if(link.includes("/products/")){
+    //         console.log()
+    //         const imagePath = this.shadowRoot.querySelector('.header_logo').src;
+            
+    //         this.shadowRoot.querySelector('.header_logo').src = imagePath.replace("/products/", "/");
+    //     }
+    // }
     toggleInfo(){
         this.showInfo = !this.showInfo;
 

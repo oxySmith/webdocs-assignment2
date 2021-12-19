@@ -56,7 +56,7 @@ class ProductCard extends HTMLElement {
         this.shadowRoot.querySelector('.card_name').innerText = this.getAttribute('name');
         this.shadowRoot.querySelector('.card_price').innerText = this.getAttribute('price');
         this.shadowRoot.querySelector('.card_image').src =`images/${this.getAttribute('name').toLowerCase()}.jpg`;
-        // this.shadowRoot.querySelector('card_name').href = this.getAttribute('link');
+        this.shadowRoot.querySelector('.card_name').href = this.getAttribute('link');
         
         if(this.getAttribute('discount')){
             this.shadowRoot.querySelector('.card_discount').innerText = this.getAttribute('discount');
