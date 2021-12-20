@@ -45,6 +45,9 @@ template.innerHTML= `
         .footer_bottom{
             margin-top:2rem;
         }
+        .footer_bottom a{
+            margin-right:0.5rem;
+        }
         @media screen and (max-width: 450px) {
             .footer_top_section{
                 flex-direction: column;
@@ -73,7 +76,7 @@ template.innerHTML= `
             </div>
        </div>
        <div class="footer_bottom">
-            <span>2021 Cottbus Delivery GmbH. All rights reserved <a href="#">Terms and Conditons</a><a href="#"> Credits</a></span>
+            <span>2021 Cottbus Delivery GmbH. All rights reserved <a href="#">Terms and Conditions</a><a href="credits.html"> Credits</a></span>
        </div> 
     </footer>
 `
