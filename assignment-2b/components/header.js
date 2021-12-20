@@ -63,6 +63,12 @@ template.innerHTML= `
             display:block;
         }
     }
+    @media screen and (max-width: 600px) {
+        .logo_text{
+            display:none;
+        }
+        
+    }
    
     .overlay {
         height: 100%;
@@ -121,7 +127,10 @@ template.innerHTML= `
     <header class="header">
         <a href="#default" class="logo">
             <img class="header_logo" src="images/logo/white.png" />
-            Cottbus Delivery
+            <span class="logo_text">
+                Cottbus Delivery
+            </span>
+            
         </a>
         <div class="header_links">
             <a class="header_link" id="home" href="index.html">Home</a>

@@ -33,7 +33,7 @@ template.innerHTML= `
         <div class="hero-text">
             <h1></h1>
             <p></p>
-            <a class="hero-btn"></a>
+            <a class="hero-btn" href="#"></a>
         </div>
     </div>
 `
@@ -47,6 +47,7 @@ class HeroImage extends HTMLElement {
         this.shadowRoot.querySelector('h1').innerText = this.getAttribute('header');
         this.shadowRoot.querySelector('p').innerText = this.getAttribute('text');
         this.shadowRoot.querySelector('.hero-btn').innerText = this.getAttribute('btn-text');
+        this.shadowRoot.querySelector('.hero-btn').href = this.getAttribute('btn-link');
         this.shadowRoot.querySelector(".hero-image").style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/${this.getAttribute('bg')}.jpeg)`;
     }
 }

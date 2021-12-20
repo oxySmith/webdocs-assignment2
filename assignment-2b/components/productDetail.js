@@ -32,7 +32,7 @@ template.innerHTML= `
             font-size: 1.5rem;
         }
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: 700px) {
             .product_detail{
                 flex-direction: column;
             }
