@@ -69,7 +69,7 @@ class ProductCard extends HTMLElement {
     }
 
     onCardClick(){
-        window.location.href = this.getAttribute('link');
+        window.location.href = this.getAttribute('link') ? this.getAttribute('link') : "#";
     }
 
     connectedCallback(){
