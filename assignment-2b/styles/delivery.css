@@ -1,0 +1,7 @@
+.form_element{
+    margin-bottom: 1rem;
+}
+.form_textarea{
+    width: 50%;
+    height: 10rem;
+}

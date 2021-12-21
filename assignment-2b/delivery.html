@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cottbus Delivery</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/delivery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -15,8 +16,71 @@
                 <div><h3>Request Delivery</h3></div>
                 <div><p>Please leave your contact information, your desired delivery/pickup date and time and tell us what you want to buy in the message box. We will contact you via phone or email to confirm your request during our working hour as soon as possible.</p></div>
                 <div>
-                    <div><span>Title:</span></div>
-                    <div><span>Name:</span></div>
+                    <form action="#">
+                        <div class="form_element">
+                            <label for="country">Title</label>
+                            <select id="country" name="country">
+                                <option value="mr">Mr</option>
+                                <option value="ms">Mrs</option>
+                                <option value="ms">Ms</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form_element">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Name">
+                        </div>
+
+                        <div class="form_element">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Email">
+                        </div>
+
+                        <div class="form_element">
+                            <label for="lname">Phone Number</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Phone number">
+                        </div>
+                        
+                    
+                        <br />
+
+                        <div>
+                            <h3>Delivery Options</h3>
+                            <div class="form_element">
+                                <label>Delivery</label>
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                <label>Self Pick up</label>
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                            </div>
+                            <div class="form_element">
+                                <label for="birthday">Delivery:</label>
+                                <input type="date" id="birthday" name="birthday">
+                            </div>
+                            <div class="form_element">
+                                <div class="form_element">
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label>8AM - 12PM</label>
+                                </div>
+                                <div class="form_element">
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label>12AM - 18PM</label>
+                                </div>
+                                <div class="form_element">
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label>18PM - 22PM</label>
+                                </div>
+                            </diV>
+                        </div>
+
+                        <br />
+                        <div>
+                            <textarea class="form_textarea" id="w3review" name="w3review">
+                
+                            </textarea>
+                        </div>
+                      
+                        <input type="submit" value="Submit">
+                      </form>
                 </div>
             </section>
         </app-body>
