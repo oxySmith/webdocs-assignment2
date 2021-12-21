@@ -8,6 +8,7 @@ template.innerHTML= `
             padding: 0.5rem;
             background-color: #f1f1f1;
             border-radius: 0.2rem;
+            cursor: pointer;
         }
         .card img{
             width: 10rem;
@@ -42,7 +43,7 @@ template.innerHTML= `
         <img class="card_image" src="" alt="Food image">
         <div class="container">
             <a class="card_name" href="#"></a>
-            <span class="card_price">$1,50</span>
+            <span class="card_price">&#8364;1,50</span>
         </div>
     </div>
 `
@@ -54,9 +55,10 @@ class ProductCard extends HTMLElement {
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.shadowRoot.querySelector('.card_name').innerText = this.getAttribute('name');
-        this.shadowRoot.querySelector('.card_price').innerText = this.getAttribute('price');
+        this.shadowRoot.querySelector('.card_price').innerHTML = "&#8364;" + this.getAttribute('price') + "/" + this.getAttribute('unit');
         this.shadowRoot.querySelector('.card_image').src =`images/${this.getAttribute('name').toLowerCase()}.jpg`;
-        this.shadowRoot.querySelector('.card_name').href = this.getAttribute('link');
+
+        this.shadowRoot.querySelector('.card_name').href = this.getAttribute('link') ? this.getAttribute('link') : "#";
         
         if(this.getAttribute('discount')){
             this.shadowRoot.querySelector('.card_discount').innerText = this.getAttribute('discount');
@@ -66,6 +68,20 @@ class ProductCard extends HTMLElement {
         
     }
 
+    onCardClick(){
+        window.location.href = this.getAttribute('link');
+    }
+
+    connectedCallback(){
+        this.shadowRoot.querySelectorAll(".card").forEach((el)=>{
+            el.addEventListener('click', () => this.onCardClick())
+        })
+    }
+    disconnectedCallback(){
+        this.shadowRoot.querySelectorAll(".card").forEach((el)=>{
+            el.removeEventListener()
+        })
+    }
 }
 
 window.customElements.define('product-card', ProductCard)

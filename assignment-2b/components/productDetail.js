@@ -132,7 +132,7 @@ class ProductDetail extends HTMLElement {
             if(this.shadowRoot.getElementById(key)){
                 this.shadowRoot.getElementById(key).innerText = product[key]
                 if(key == "price"){
-                    this.shadowRoot.getElementById(key).innerText = "$" + product["price"] + "/" + product["unit"]
+                    this.shadowRoot.getElementById(key).innerHTML = "&#8364;" + product["price"] + "/" + product["unit"]
                 }
                 if(key == "name"){
                     document.title = product["name"]
