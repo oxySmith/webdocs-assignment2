@@ -116,7 +116,7 @@ class ProductDetail extends HTMLElement {
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
-
+        
         this.loadPage()
     }
 
@@ -133,6 +133,9 @@ class ProductDetail extends HTMLElement {
                 this.shadowRoot.getElementById(key).innerText = product[key]
                 if(key == "price"){
                     this.shadowRoot.getElementById(key).innerText = "$" + product["price"] + "/" + product["unit"]
+                }
+                if(key == "name"){
+                    document.title = product["name"]
                 }
             }
             if(key == "src"){
