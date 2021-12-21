@@ -125,7 +125,7 @@ template.innerHTML= `
     }
     </style>
     <header class="header">
-        <a href="#default" class="logo">
+        <a href="index.html" class="logo">
             <img class="header_logo" src="images/logo/white.png" />
             <span class="logo_text">
                 Cottbus Delivery
