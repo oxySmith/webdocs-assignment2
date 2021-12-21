@@ -133,13 +133,13 @@ template.innerHTML= `
             
         </a>
         <div class="header_links">
-            <a class="header_link" id="home" href="index.html">Home</a>
-            <a class="header_link" id="about"  href="about.html">About </a>
-            <a class="header_link" id="discounts" href="discounts.html">Discounts </a>
-            <a class="header_link" id="products" href="products.html">Products </a>
-            <a class="header_link" id="delivery" href="delivery.html">Delivery </a>
-            <a class="header_link" id="recipes" href="receipes.html">Recipes </a>
-            <a class="header_link" id="contact" href="contact.html">Contact us</a>
+            <a class="header_link home" href="index.html">Home</a>
+            <a class="header_link about" href="about.html">About </a>
+            <a class="header_link discounts" href="discounts.html">Discounts </a>
+            <a class="header_link products" href="products.html">Products </a>
+            <a class="header_link delivery" href="delivery.html">Delivery </a>
+            <a class="header_link recipes" href="receipes.html">Recipes </a>
+            <a class="header_link contact" href="contact.html">Contact us</a>
         </div>
 
         <div id="mobile-nav-btn" class="header_btn">
@@ -153,13 +153,13 @@ template.innerHTML= `
 
         <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a class="header_link" id="home" href="index.html">Home</a>
-            <a class="header_link" id="about"  href="about.html">About </a>
-            <a class="header_link" id="discounts" href="discounts.html">Discounts </a>
-            <a class="header_link" id="products" href="products.html">Products </a>
-            <a class="header_link" id="delivery" href="delivery.html">Delivery </a>
-            <a class="header_link" id="recipes" href="receipes.html">Recipes </a>
-            <a class="header_link" id="contact" href="contact.html">Contact us</a>
+            <a class="header_link home" href="index.html">Home</a>
+            <a class="header_link about" href="about.html">About </a>
+            <a class="header_link discounts" href="discounts.html">Discounts </a>
+            <a class="header_link products" href="products.html">Products </a>
+            <a class="header_link delivery" href="delivery.html">Delivery </a>
+            <a class="header_link recipes" href="receipes.html">Recipes </a>
+            <a class="header_link contact" href="contact.html">Contact us</a>
         </div>
 
     </div>
@@ -176,29 +176,13 @@ class AppHeader extends HTMLElement {
     }
 
     active(){
-        const link =  window.location.href;
-
-        if(link.includes("index.html")){
-            this.shadowRoot.getElementById("home").classList.add("active");
-        }
-        if(link.includes("about.html")){
-            this.shadowRoot.getElementById("about").classList.add("active");
-        }
-        if(link.includes("discounts.html")){
-            this.shadowRoot.getElementById("discounts").classList.add("active");
-        }
-        if(link.includes("products.html")){
-            this.shadowRoot.getElementById("products").classList.add("active");
-        }
-        if(link.includes("delivery.html")){
-            this.shadowRoot.getElementById("delivery").classList.add("active");
-        }
-        if(link.includes("recipes.html")){
-            this.shadowRoot.getElementById("recipes").classList.add("active");
-        }
-        if(link.includes("contact.html")){
-            this.shadowRoot.getElementById("contact").classList.add("active");
-        }
+        let link =  window.location.href;
+        link = link.split("/")
+        let navClass = link[link.length - 1].split(".")[0];
+        navClass = navClass === "index" ? ".home" : "." + navClass;
+        this.shadowRoot.querySelectorAll(navClass).forEach((el)=>{
+            el.classList.add("active");
+        })
     }
 
     // setImages(){
