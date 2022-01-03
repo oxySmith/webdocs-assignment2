@@ -138,7 +138,7 @@ template.innerHTML= `
             <a class="header_link discounts" href="discounts.html">Discounts </a>
             <a class="header_link products" href="products.html">Products </a>
             <a class="header_link delivery" href="delivery.html">Delivery </a>
-            <a class="header_link recipes" href="receipes.html">Recipes </a>
+            <a class="header_link recipes" href="recipes.html">Recipes </a>
             <a class="header_link contact" href="contact.html">Contact us</a>
         </div>
 
@@ -158,7 +158,7 @@ template.innerHTML= `
             <a class="header_link discounts" href="discounts.html">Discounts </a>
             <a class="header_link products" href="products.html">Products </a>
             <a class="header_link delivery" href="delivery.html">Delivery </a>
-            <a class="header_link recipes" href="receipes.html">Recipes </a>
+            <a class="header_link recipes" href="recipes.html">Recipes </a>
             <a class="header_link contact" href="contact.html">Contact us</a>
         </div>
 
