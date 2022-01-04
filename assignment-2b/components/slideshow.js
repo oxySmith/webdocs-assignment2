@@ -5,7 +5,7 @@ template.innerHTML= `
 
         /* Slideshow container */
         .slideshow-container {
-          max-width: 1000px;
+          max-width: 500px;
           position: relative;
           margin: auto;
         }
