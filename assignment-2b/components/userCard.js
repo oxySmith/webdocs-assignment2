@@ -40,12 +40,7 @@ class UserCard extends HTMLElement {
             toggleBtn.innerText = 'Show Info';
         }
     }
-    connectedCallback(){
-        this.shadowRoot.querySelector('#toggle-info').addEventListener('click', () => this.toggleInfo())
-    }
-    disconnectedCallback(){
-        this.shadowRoot.querySelector('#toggle-info').removeEventListener
-    }
+
 }
 
 window.customElements.define('user-card', UserCard)
