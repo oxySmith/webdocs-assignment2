@@ -76,7 +76,7 @@ template.innerHTML= `
             </div>
        </div>
        <div class="footer_bottom">
-            <span>2021 Cottbus Delivery GmbH. All rights reserved <a href="#">Terms and Conditions</a><a href="credits.html"> Credits</a></span>
+            <span>2021 Cottbus Delivery GmbH. All rights reserved <a href="terms.html">Terms and Conditions</a><a href="credits.html"> Credits</a></span>
        </div> 
     </footer>
 `
