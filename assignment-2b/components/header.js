@@ -172,17 +172,19 @@ class AppHeader extends HTMLElement {
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.active();
-        // this.setImages();
     }
 
     active(){
         let link =  window.location.href;
         link = link.split("/")
         let navClass = link[link.length - 1].split(".")[0];
-        navClass = navClass === "index" ? ".home" : "." + navClass;
-        this.shadowRoot.querySelectorAll(navClass).forEach((el)=>{
-            el.classList.add("active");
-        })
+        if(!navClass.includes('000')){
+            navClass = navClass === "index" ? ".home" : "." + navClass;
+            this.shadowRoot.querySelectorAll(navClass).forEach((el)=>{
+                el.classList.add("active");
+            })
+        }
+        
     }
 
     // setImages(){
