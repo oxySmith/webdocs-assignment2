@@ -151,7 +151,7 @@ template.innerHTML= `
 
     <div id="myNav" class="overlay">
 
-        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" id="closebtn">&times;</a>
         <div class="overlay-content">
             <a class="header_link home" href="index.html">Home</a>
             <a class="header_link about" href="about.html">About </a>
@@ -186,16 +186,6 @@ class AppHeader extends HTMLElement {
         }
         
     }
-
-    // setImages(){
-    //     const link =  window.location.href;
-    //     if(link.includes("/products/")){
-    //         console.log()
-    //         const imagePath = this.shadowRoot.querySelector('.header_logo').src;
-            
-    //         this.shadowRoot.querySelector('.header_logo').src = imagePath.replace("/products/", "/");
-    //     }
-    // }
     toggleInfo(){
         this.showInfo = !this.showInfo;
 

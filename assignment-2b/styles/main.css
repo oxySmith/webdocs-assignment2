@@ -20,7 +20,6 @@ body{
   justify-content: center;
 }
 
-
 @media screen and (max-width: 600px) {
   .grid-section{
     display: flex;
