@@ -11,6 +11,7 @@ template.innerHTML= `
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 100%;
       }
       .hero-text {
         text-align: center;
@@ -21,12 +22,18 @@ template.innerHTML= `
         padding: 0.5rem;
       }
       .hero-btn{
-        padding: 1rem 6rem;
         border-radius: 0.4rem;
         color: #ffff;
         font-weight: 600;
         background-color: #f38d3f;
         cursor: pointer;
+        text-decoration: none;
+        width: 10rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-content: unsafe;
+        align-items: center;
       }
     </style>
     <div class="hero-image">
@@ -41,7 +48,6 @@ template.innerHTML= `
 class HeroImage extends HTMLElement {
     constructor(){
         super();
-        this.showInfo=true;
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.shadowRoot.querySelector('h1').innerText = this.getAttribute('header');
