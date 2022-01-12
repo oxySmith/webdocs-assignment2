@@ -1,0 +1,88 @@
+.test{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 4rem auto;
+}
+.form_element{
+    margin-bottom: 1rem;
+}
+.form_textarea{
+    width: 50%;
+    height: 10rem;
+}
+
+
+.birthday_box{
+    display: flex;
+    border: solid;
+    padding: 2rem;
+}
+
+.birthday_box img{
+    width: 35%;
+}
+
+.birthday_box h2{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.birthday_box_info{
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .birthday_box img{
+        display: none;
+    }
+
+}
+* {
+    /* ↓ Now literally all elements display a sans-serif font */
+    font-family: Helvetica;
+}
+
+body{
+    margin: 0;
+}
+
+.section{}
+
+.section-header{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .grid-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.header{
+    display: flex;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    background-color: #dddddd;
+    padding: 1rem;
+}
+.form_element{
+    margin-bottom: 1rem;
+}
+.form_textarea{
+    width: 50%;
+    height: 15rem;
+
+}
