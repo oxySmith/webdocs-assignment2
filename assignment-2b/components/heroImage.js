@@ -1,41 +1,7 @@
 var template = document.createElement('template')
 template.innerHTML= `
-    <style>
-        .hero-image {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        height: 25rem;
-        margin: 2rem 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-      }
-      .hero-text {
-        text-align: center;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem;
-      }
-      .hero-btn{
-        border-radius: 0.4rem;
-        color: #ffff;
-        font-weight: 600;
-        background-color: #f38d3f;
-        cursor: pointer;
-        text-decoration: none;
-        width: 10rem;
-        height: 2.5rem;
-        display: flex;
-        justify-content: center;
-        align-content: unsafe;
-        align-items: center;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/main.css">
+
     <div class="hero-image">
         <div class="hero-text">
             <h1></h1>

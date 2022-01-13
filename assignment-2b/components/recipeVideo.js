@@ -1,27 +1,6 @@
 var template = document.createElement('template')
 template.innerHTML= `
-    <style>
-        .recipe{
-            width: 75%;
-            margin-bottom: 5rem;
-        }
-        .container {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-        }
-    
-        .responsive-iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/main.css">
     <div class="recipe">
         <h2></h2>
         <div class="container">

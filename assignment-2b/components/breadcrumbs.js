@@ -1,35 +1,11 @@
 var template = document.createElement('template')
 template.innerHTML= `
-    <style>
-        .breadcrumb ul {
-            display: flex;
-            list-style: none;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            padding-inline-start: 0;
-            margin-bottom: 1rem;
-        }
-            
-        .breadcrumb li::before {
-            content: ">";
-            margin-right: 0.2rem;
-            margin-left: 0.2rem;
-        }
-            
-        .breadcrumb li:first-child::before {
-            content: "";
-        }
-
-        a{
-            text-decoration: none;
-            font-weight: 600;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/main.css">
     <nav aria-label="Breadcrumb" class="breadcrumb">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li id="product"></li>
+        <ul class="breadcrumb_list">
+            <li class="breadcrumb_list_item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb_list_item"><a href="products.html">Products</a></li>
+            <li class="breadcrumb_list_item" id="product"></li>
         </ul>
     </nav>
     

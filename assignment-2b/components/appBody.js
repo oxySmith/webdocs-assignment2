@@ -1,10 +1,6 @@
 var template = document.createElement('template')
 template.innerHTML= `
-    <style>
-        .app-body{
-            padding: 3rem 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/main.css">
     <div class="app-body">
         <slot />
     </div>
