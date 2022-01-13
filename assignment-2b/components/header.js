@@ -65,12 +65,19 @@ class AppHeader extends HTMLElement {
         }
         
     }
+
+    noScroll() {
+        window.scrollTo(0, 0);
+      }
+
     openNav() {
         this.shadowRoot.getElementById("myNav").style.width = "100%";
+        window.addEventListener('scroll', this.noScroll);
     }
 
     closeNav() {
         this.shadowRoot.getElementById("myNav").style.width = "0%";
+        window.removeEventListener('scroll', this.noScroll);
     }
     connectedCallback(){
         this.shadowRoot.getElementById("mobile-nav-btn").addEventListener('click', () => this.openNav())
