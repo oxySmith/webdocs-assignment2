@@ -1,12 +1,29 @@
-.test {
+html{
+    font-family: Helvetica, Sans-Serif;
+}
+
+.contact_page {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     margin: 4rem auto;
 }
+.contact_img{
+    margin-right: 5rem;
+}
+@media screen and (max-width: 892px) {
+    .contact {
+        flex-direction: column;
+    }
+}
+
 .form_element {
+    display: flex;
     margin-bottom: 1rem;
+}
+.form_element_label{
+    margin-right: 0.5rem;
 }
 .form_textarea {
     height: 10rem;
@@ -33,9 +50,7 @@
         display: none;
     }
 }
-* {
-    font-family: Helvetica;
-}
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -373,11 +388,17 @@ header {
     position: relative;
     margin: auto;
 }
-.mySlides {
+.slideshow {
     display: none;
 }
-.prev,
-.next {
+.slideshow_img{
+    width:100%;
+}
+.slideshow_indicators{
+    text-align:center
+}
+.slideshow_prev,
+.slideshow_next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -391,12 +412,12 @@ header {
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-.next {
+.slideshow_next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-.prev:hover,
-.next:hover {
+.slideshow_prev:hover,
+.slideshow_next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 .text {
@@ -408,14 +429,14 @@ header {
     width: 100%;
     text-align: center;
 }
-.numbertext {
+.slideshow_number {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
 }
-.dot {
+.slideshow_dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -425,8 +446,8 @@ header {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-.active,
-.dot:hover {
+.slideshow--active,
+.slideshow_dot:hover {
     background-color: #717171;
 }
 .fade {

@@ -3,7 +3,7 @@ template.innerHTML= `
     <link rel="stylesheet" href="styles/main.css">
     <section class="product_section">
             <div class="product_detail">
-            <img id="image" src="" />
+            <img id="image" height="400" width="400" alt="product" src="" />
             <div class="info">
                 <h2 id="name"></h2>
                 <h3 id="price"></h3>

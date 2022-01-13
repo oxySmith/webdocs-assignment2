@@ -5,12 +5,12 @@ template.innerHTML= `
        <div class="footer_top_section">
             <div class="footer_info_container">
                 <div class="footer_info">
-                    <img id="footer_logo" class="footer_img" src="images/logo/yellow.jpeg" />
+                    <img id="footer_logo" class="footer_img" height="32" width="45" alt="logo" src="images/logo/yellow.jpeg" />
                     <span>Cottbus Delivery</span>
                 </div>
                 <div class="footer_social">
-                    <img id="insta" class="class="footer_social_insta" src="images/instagram.svg" />
-                    <img id="face" class="class="footer_social_face" src="images/facebook.svg" />
+                    <img id="insta" class="class="footer_social_insta" height="25" width="25" alt="insta" src="images/instagram.svg" />
+                    <img id="face" class="class="footer_social_face" height="25" width="25" alt="facebook" src="images/facebook.svg" />
                 </div>
             </div>
             <div class="footer_work">
