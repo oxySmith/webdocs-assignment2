@@ -14,7 +14,6 @@ template.innerHTML= `
 class Breadcrumbs extends HTMLElement {
     constructor(){
         super();
-        this.showInfo=true;
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.shadowRoot.getElementById('product').innerText = this.getAttribute('product-name');

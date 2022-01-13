@@ -14,7 +14,7 @@ template.innerHTML= `
 class ProductCard extends HTMLElement {
     constructor(){
         super();
-        this.showInfo=true;
+        
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.shadowRoot.querySelector('.card_name').innerText = this.getAttribute('name');

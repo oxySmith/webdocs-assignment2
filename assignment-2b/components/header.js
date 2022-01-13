@@ -47,7 +47,7 @@ template.innerHTML= `
 class AppHeader extends HTMLElement {
     constructor(){
         super();
-        this.showInfo=true;
+        
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.active();
