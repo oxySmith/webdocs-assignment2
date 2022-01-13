@@ -1,6 +1,6 @@
 var template = document.createElement('template')
 template.innerHTML= `
-    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/main.css">
     <div class="recipe">
         <h2></h2>
         <div class="container">

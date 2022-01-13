@@ -1,6 +1,6 @@
 var template = document.createElement('template')
 template.innerHTML= `
-    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/main.css">
 
     <div class="hero-image">
         <div class="hero-text">

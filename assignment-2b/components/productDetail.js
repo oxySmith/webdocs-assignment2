@@ -1,6 +1,6 @@
 var template = document.createElement('template')
 template.innerHTML= `
-    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/main.css">
     <section class="product_section">
             <div class="product_detail">
             <img id="image" src="" />

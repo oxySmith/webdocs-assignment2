@@ -1,6 +1,6 @@
 var template = document.createElement('template')
 template.innerHTML= `
-    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/main.css">
     <footer>
        <div class="footer_top_section">
             <div class="footer_info_container">
