@@ -1,51 +1,6 @@
 var template = document.createElement('template')
 template.innerHTML= `
-    <style>
-        .product_section{
-           
-        }
-        .product_detail{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .product_detail img{
-            height: 25rem;
-            border-radius: 0.5rem;
-        }
-        .info{
-            height: 25rem;
-            margin-left: 5rem;
-        }
-        .info h2{
-            font-size: 2rem;
-        }
-        .info div{
-            margin-top:1rem;
-        }
-        .info span{
-            font-weight:600;
-        }
-
-        .back{
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
-
-        @media screen and (max-width: 700px) {
-            .product_detail{
-                flex-direction: column;
-            }
-            .product_detail img{
-                height: 17rem;
-                border-radius: 0.5rem;
-            }
-            .info{
-                height: 25rem;
-                margin-left: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles/all.css">
     <section class="product_section">
             <div class="product_detail">
             <img id="image" src="" />

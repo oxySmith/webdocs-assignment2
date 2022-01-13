@@ -1,63 +1,6 @@
 var template = document.createElement('template')
 template.innerHTML= `
-    <style>
-        footer{
-            padding: 3rem 2rem;
-            font-weight:300;
-            background-color: #f1f1f1;
-        }
-        .footer_info{
-            display: flex;
-            align-items: center;
-        }
-        .footer_info span{
-            margin-left: 1rem;
-            font-weight: 600;
-        }
-        .footer_img{
-            height: 3rem;
-            border-radius: 0.3rem;
-        }
-        .footer_social{
-            display: flex;
-            height: 2rem;
-            margin-top: 1rem;
-        }
-        .footer_social img{
-            cursor: pointer;
-            border-radius: 0.3rem;
-            margin-right: 0.5rem;
-        }
-        .footer_top_section{
-            display: flex;
-            justify-content: space-between;
-        }
-        .footer_work{
-            display: flex;
-            flex-direction: column; 
-        }
-        .footer_work a{
-            text-decoration: none;
-        }
-        .footer_info_container{
-            
-        }
-        .footer_bottom{
-            margin-top:2rem;
-        }
-        .footer_bottom a{
-            margin-right:0.5rem;
-        }
-        @media screen and (max-width: 450px) {
-            .footer_top_section{
-                flex-direction: column;
-            }
-            .footer_work{
-                margin-top:1rem;
-            }
-        }
-        
-    </style>
+    <link rel="stylesheet" href="styles/all.css">
     <footer>
        <div class="footer_top_section">
             <div class="footer_info_container">
@@ -84,23 +27,9 @@ template.innerHTML= `
 class AppFooter extends HTMLElement {
     constructor(){
         super();
-        this.showInfo=true;
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
-
-        // this.setImages();
     }
-
-    // setImages(){
-    //     const link =  window.location.href;
-    //     if(link.includes("/products/")){
-    //         const images = ["footer_logo","insta","face"]
-    //         images.map((image) => {
-    //             const imagePath = this.shadowRoot.getElementById(image).src;
-    //             this.shadowRoot.getElementById(image).src = imagePath.replace("/products/", "/");
-    //         })
-    //     }
-    // }
 }
 
 window.customElements.define('app-footer', AppFooter)

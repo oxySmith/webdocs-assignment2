@@ -1,43 +1,6 @@
 var template = document.createElement('template')
 template.innerHTML= `
-    <style>
-        .card{
-            position:relative;
-            width: 14.5rem;
-            margin: 0.5rem;
-            padding: 0.5rem;
-            background-color: #f1f1f1;
-            border-radius: 0.2rem;
-            cursor: pointer;
-        }
-        .card img{
-            width: 10rem;
-            padding: 1rem 2.3rem;
-        }
-        .card .container{
-            display: flex;
-            justify-content: space-between;
-            padding: 0.3rem;
-        }
-        .card_discount{
-            position: absolute;
-            top: 13%;
-            right: 11%;
-            padding: 0.5rem;
-            border-radius: 1.2rem;
-            font-weight: 900;
-            background-color: yellow;
-            border-style: solid;
-            border-color: #000;
-        }
-        .card_price{
-            font-weight: 600;
-        }
-        .card_name{
-            font-weight: 600;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/all.css">
     <div class="card">
         <div class="card_discount"></div>
         <img class="card_image" src="" alt="Food image">
