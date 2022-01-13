@@ -1,101 +1,75 @@
-.test{
+.test {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     margin: 4rem auto;
 }
-.form_element{
+.form_element {
     margin-bottom: 1rem;
 }
-.form_textarea{
-    width: 50%;
+.form_textarea {
     height: 10rem;
+    width: 50%;
+    height: 15rem;
 }
-
-
-.birthday_box{
+.birthday_box {
     display: flex;
     border: solid;
     padding: 2rem;
 }
-
-.birthday_box img{
+.birthday_box img {
     width: 35%;
 }
-
-.birthday_box h2{
+.birthday_box h2 {
     font-size: 2rem;
     font-weight: 900;
 }
-
-.birthday_box_info{
+.birthday_box_info {
     padding: 1rem;
 }
-
 @media screen and (max-width: 600px) {
-    .birthday_box img{
+    .birthday_box img {
         display: none;
     }
-
 }
 * {
-    /* ↓ Now literally all elements display a sans-serif font */
     font-family: Helvetica;
 }
-
-body{
+body {
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
-.section{}
-
-.section-header{
+.section-header {
     display: flex;
     justify-content: center;
 }
-
-.grid-section{
+.grid-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-
 @media screen and (max-width: 600px) {
-    .grid-section{
+    .grid-section {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 }
-.header{
+.header {
     display: flex;
 }
-.banner{
+.banner {
     display: flex;
     justify-content: center;
-    background-color: #dddddd;
+    background-color: #ddd;
     padding: 1rem;
 }
-.form_element{
-    margin-bottom: 1rem;
-}
-.form_textarea{
-    width: 50%;
-    height: 15rem;
-
-}
-
-/* App body component */
-.app-body{
+.app-body {
     padding: 3rem 2rem;
 }
-
-/* Breadcrumb Component */
 .breadcrumb_list {
     display: flex;
     list-style: none;
@@ -104,92 +78,79 @@ body{
     padding-inline-start: 0;
     margin-bottom: 1rem;
 }
-    
 .breadcrumb_list_item::before {
     content: ">";
     margin-right: 0.2rem;
     margin-left: 0.2rem;
 }
-    
 .breadcrumb_list_item:first-child::before {
     content: "";
 }
-
-.breadcrumb_list_item a{
+.breadcrumb_list_item a {
     text-decoration: none;
     font-weight: 600;
 }
-
-/* 
-Footer Component */
-
-footer{
+footer {
     margin-top: auto;
     padding: 3rem 2rem;
-    font-weight:300;
+    font-weight: 300;
     background-color: #f1f1f1;
 }
-.footer_info{
+.footer_info {
     display: flex;
     align-items: center;
 }
-.footer_info span{
+.footer_info span {
     margin-left: 1rem;
     font-weight: 600;
 }
-.footer_img{
+.footer_img {
     height: 3rem;
     border-radius: 0.3rem;
 }
-.footer_social{
+.footer_social {
     display: flex;
     height: 2rem;
     margin-top: 1rem;
 }
-.footer_social img{
+.footer_social img {
     cursor: pointer;
     border-radius: 0.3rem;
     margin-right: 0.5rem;
 }
-.footer_top_section{
+.footer_top_section {
     display: flex;
     justify-content: space-between;
 }
-.footer_work{
+.footer_work {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
-.footer_work a{
+.footer_work a {
     text-decoration: none;
 }
-.footer_info_container{
-    
+.footer_bottom {
+    margin-top: 2rem;
 }
-.footer_bottom{
-    margin-top:2rem;
-}
-.footer_bottom a{
-    margin-right:0.5rem;
+.footer_bottom a {
+    margin-right: 0.5rem;
 }
 @media screen and (max-width: 450px) {
-    .footer_top_section{
+    .footer_top_section {
         flex-direction: column;
     }
-    .footer_work{
-        margin-top:1rem;
+    .footer_work {
+        margin-top: 1rem;
     }
 }
-
-/* Header Component */
-header{
+header {
     background-color: #f38d3f;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0rem 1rem;
-
 }
-.header_logo{
+.header_logo {
     display: flex;
     align-items: center;
     font-size: 2rem;
@@ -197,34 +158,32 @@ header{
     font-weight: 600;
     text-decoration: none;
 }
-
-.logo{
+.logo {
     height: 7rem;
     width: 7rem;
 }
-.header_links{
+.header_links {
     flex-basis: 57%;
     display: flex;
     justify-content: space-evenly;
 }
-.header_link{
+.header_link {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
-.header_link--active{
+.header_link--active {
     text-decoration: underline;
     color: #ffffe0;
 }
-.header_link:hover{
-    color: #ffffe0
+.header_link:hover {
+    color: #ffffe0;
 }
-.header_link span{
+.header_link span {
     color: #000;
-
 }
-.header_btn{
-    display:none;
+.header_btn {
+    display: none;
 }
 .bar {
     width: 35px;
@@ -232,79 +191,65 @@ header{
     background-color: #f1f1f1;
     margin: 6px 0;
 }
-  
 @media screen and (max-width: 892px) {
-    .header_links{
-        display:none;
+    .header_links {
+        display: none;
     }
-    .header_btn{
-        display:block;
+    .header_btn {
+        display: block;
     }
 }
 @media screen and (max-width: 600px) {
-    .logo_text{
-        display:none;
+    .logo_text {
+        display: none;
     }
-    
 }
-
 .overlay {
     height: 100%;
     width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: #f38d3fd9; /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    background-color: #f38d3fd9;
+    overflow-x: hidden;
+    transition: 0.5s;
 }
-
-/* Position the content inside the overlay */
 .overlay-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-/* The navigation links inside the overlay */
 .overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #ffffff;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    color: #fff;
+    display: block;
+    transition: 0.3s;
 }
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
     color: #f1f1f1;
 }
-
-/* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
 }
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-.overlay a {font-size: 20px}
-.overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
-}
-
-/* Hero image */
 .hero-image {
-    background-position: center;
-    background-repeat: no-repeat;
+    background: no-repeat center;
     background-size: cover;
     position: relative;
     height: 25rem;
@@ -312,27 +257,25 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .hero-text {
+}
+.hero-text {
     text-align: center;
-    color: white;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0.5rem;
-  }
-  .hero-btn{
+}
+.hero-btn {
     padding: 1rem 6rem;
     border-radius: 0.4rem;
     color: #ffff;
     font-weight: 600;
     background-color: #f38d3f;
     cursor: pointer;
-  }
-
-  /* Product card */
-  .card{
-    position:relative;
+}
+.card {
+    position: relative;
     width: 14.5rem;
     margin: 0.5rem;
     padding: 0.5rem;
@@ -340,83 +283,73 @@ header{
     border-radius: 0.2rem;
     cursor: pointer;
 }
-.card img{
+.card img {
     width: 10rem;
     padding: 1rem 2.3rem;
 }
-.card .container{
+.card .container {
     display: flex;
     justify-content: space-between;
     padding: 0.3rem;
 }
-.card_discount{
+.card_discount {
     position: absolute;
     top: 13%;
     right: 11%;
     padding: 0.5rem;
     border-radius: 1.2rem;
     font-weight: 900;
-    background-color: yellow;
+    background-color: #ff0;
     border-style: solid;
     border-color: #000;
 }
-.card_price{
+.card_price {
     font-weight: 600;
 }
-.card_name{
+.card_name {
     font-weight: 600;
     text-decoration: none;
 }
-
-/* 
-Product detail  */
-
-.product_section{
-           
-}
-.product_detail{
+.product_detail {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.product_detail img{
+.product_detail img {
     height: 25rem;
     border-radius: 0.5rem;
 }
-.info{
+.info {
     height: 25rem;
     margin-left: 5rem;
 }
-.info h2{
+.info h2 {
     font-size: 2rem;
 }
-.info div{
-    margin-top:1rem;
+.info div {
+    margin-top: 1rem;
 }
-.info span{
-    font-weight:600;
+.info span {
+    font-weight: 600;
 }
-
-.back{
+.back {
     text-decoration: none;
     font-size: 1.5rem;
 }
-
 @media screen and (max-width: 700px) {
-    .product_detail{
+    .product_detail {
         flex-direction: column;
     }
-    .product_detail img{
+    .product_detail img {
         height: 17rem;
         border-radius: 0.5rem;
     }
-    .info{
+    .info {
         height: 25rem;
         margin-left: 0;
     }
 }
-
-.recipe{
+.recipe {
     width: 75%;
     margin-bottom: 5rem;
 }
@@ -424,9 +357,8 @@ Product detail  */
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 56.25%;
 }
-
 .responsive-iframe {
     position: absolute;
     top: 0;
@@ -436,48 +368,38 @@ Product detail  */
     width: 100%;
     height: 100%;
 }
-
-/* Slideshow container */
 .slideshow-container {
     max-width: 500px;
     position: relative;
     margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
+}
+.mySlides {
     display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.text {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -485,19 +407,15 @@ Product detail  */
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -506,26 +424,30 @@ Product detail  */
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
+}
+.active,
+.dot:hover {
     background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
+}
+.fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
