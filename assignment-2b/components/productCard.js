@@ -4,7 +4,7 @@ template.innerHTML= `
     <div class="card">
         <div class="card_discount"></div>
         <img class="card_image" width="250" height="150" src="" alt="Food image"/>
-        <div class="container">
+        <div class="card_container">
             <a class="card_name" href="#"></a>
             <span class="card_price">&#8364;1,50</span>
         </div>

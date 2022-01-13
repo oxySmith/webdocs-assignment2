@@ -82,7 +82,7 @@ body {
     background-color: #ddd;
     padding: 1rem;
 }
-.app-body {
+.app_body {
     padding: 3rem 2rem;
 }
 .breadcrumb_list {
@@ -173,7 +173,7 @@ header {
     font-weight: 600;
     text-decoration: none;
 }
-.logo {
+.header_logo_img {
     height: 7rem;
     width: 7rem;
 }
@@ -215,7 +215,7 @@ header {
     }
 }
 @media screen and (max-width: 600px) {
-    .logo_text {
+    .header_logo_text {
         display: none;
     }
 }
@@ -263,7 +263,7 @@ header {
         right: 35px;
     }
 }
-.hero-image {
+.hero_image {
     background: no-repeat center;
     background-size: cover;
     position: relative;
@@ -273,7 +273,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-.hero-text {
+.hero_text {
     text-align: center;
     color: #fff;
     display: flex;
@@ -281,7 +281,7 @@ header {
     align-items: center;
     padding: 0.5rem;
 }
-.hero-btn {
+.hero_btn {
     padding: 1rem 6rem;
     border-radius: 0.4rem;
     color: #ffff;
@@ -298,11 +298,11 @@ header {
     border-radius: 0.2rem;
     cursor: pointer;
 }
-.card img {
+.card_image {
     width: 10rem;
     padding: 1rem 2.3rem;
 }
-.card .container {
+.card_container {
     display: flex;
     justify-content: space-between;
     padding: 0.3rem;
@@ -330,24 +330,24 @@ header {
     justify-content: center;
     align-items: center;
 }
-.product_detail img {
+.product_detail_img {
     height: 25rem;
     border-radius: 0.5rem;
 }
-.info {
+.product_detail_info {
     height: 25rem;
     margin-left: 5rem;
 }
-.info h2 {
+.product_detail_name {
     font-size: 2rem;
 }
-.info div {
+.product_detail_info div {
     margin-top: 1rem;
 }
-.info span {
+.product_detail_info span {
     font-weight: 600;
 }
-.back {
+.product_detail_back_btn {
     text-decoration: none;
     font-size: 1.5rem;
 }
@@ -355,11 +355,11 @@ header {
     .product_detail {
         flex-direction: column;
     }
-    .product_detail img {
+    .product_detail_img {
         height: 17rem;
         border-radius: 0.5rem;
     }
-    .info {
+    .product_detail_info {
         height: 25rem;
         margin-left: 0;
     }
@@ -368,13 +368,13 @@ header {
     width: 75%;
     margin-bottom: 5rem;
 }
-.container {
+.recipe_container {
     position: relative;
     overflow: hidden;
     width: 100%;
     padding-top: 56.25%;
 }
-.responsive-iframe {
+.recipe_embed {
     position: absolute;
     top: 0;
     left: 0;

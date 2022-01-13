@@ -1,7 +1,7 @@
 var template = document.createElement('template')
 template.innerHTML= `
     <link rel="stylesheet" href="styles/main.css">
-    <div class="app-body">
+    <div class="app_body">
         <slot />
     </div>
 `
