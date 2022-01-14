@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,54 +10,59 @@
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-<app-header></app-header>
-<app-body>
-    <section>
-        <div><p><a href="contact.html">Contact </a> > <strong>Write us </strong>
-                 <div><p>Feel free to use our contact form with any questions, concerns, ideas. We are looking forward to hear from you.</p></div>
+  </head>
+
+  <body>
+    <app-header></app-header>
+    <app-body>
+      <section>
+        <div>
+         <app-crumbs page-name="Write Us"></app-crumbs>
+          <div>
+            <p>Feel free to use our contact form with any questions, concerns, ideas. We are looking forward to hear from you.</p>
+          </div>
 
 
-                <div class="form_element">
-                    <label class="form_element_label" for ="email" >Email</label>
-                    <input type="text" id="fname" name="email" size="40" placeholder="Your email">
-                </div>
+          <div class="form_element">
+            <label class="form_element_label" for="email">Email</label>
+            <input type="text" id="fname" name="email" size="40" placeholder="Your email">
+          </div>
 
-                <div class="form_element">
-                    <label class="form_element_label" for ="name" >Name</label>
-                    <input type="text" id="lname" name="name" size="40" placeholder="Your name">
-                </div>
+          <div class="form_element">
+            <label class="form_element_label" for="name">Name</label>
+            <input type="text" id="lname" name="name" size="40" placeholder="Your name">
+          </div>
 
-                <div class="form_element">
-                    <label class="form_element_label" for ="subject" > Subject</label>
-                    <input type="text" id="lname" name="subject" size="40"  placeholder="Subject">
-                </div>
-                <br/>
-                    </diV>
-                </div>
+          <div class="form_element">
+            <label class="form_element_label" for="subject"> Subject</label>
+            <input type="text" id="lname" name="subject" size="40" placeholder="Subject">
+          </div>
+          <br />
+        </diV>
+        </div>
 
-                <br/>
-                <div>
-                            <textarea class="form_textarea" id="w3review" name="w3review">
+        <br />
+        <div>
+          <textarea class="form_textarea" id="w3review" name="w3review">
 
                             </textarea>
-                </div>
-
-                <input type="submit" value="Submit">
-            </form>
         </div>
-    </section>
-</app-body>
-<app-footer></app-footer>
+
+        <input type="submit" value="Submit">
+        </form>
+        </div>
+      </section>
+    </app-body>
+    <app-footer></app-footer>
 
 
-<script src="components/header.js"></script>
-<script src="components/footer.js"></script>
-<script src="components/appBody.js"></script>
-<script src="components/breadcrumbs.js"></script>
-<script src="components/productDetail.js"></script>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/appBody.js"></script>
+    <script src="components/breadcrumbs.js"></script>
+    <script src="components/productDetail.js"></script>
 
 
-</body>
+  </body>
+
 </html>
