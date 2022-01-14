@@ -3,15 +3,15 @@ template.innerHTML= `
     <link rel="stylesheet" href="styles/main.css">
     <section class="product_section">
             <div class="product_detail">
-            <img id="image" height="400" width="400" alt="product" src="" />
-            <div class="info">
-                <h2 id="name"></h2>
+            <img class="product_detail_img" id="image" height="400" width="400" alt="product" src="" />
+            <div class="product_detail_info">
+                <h2 class="product_detail_name" id="name"></h2>
                 <h3 id="price"></h3>
                 <div>Product description:<span id="description"></span></div>
                 <div>Origin:<span id="origin"></p></div>
                 <div>Brand:<span id="brand"></p></div>
                 <div>Stock:<span id="stock"></span></div>
-                <div></div><a class="back" href="products.html">< back to shop</a></div>
+                <div></div><a class="product_detail_back_btn" href="products.html">< back to shop</a></div>
             </div>
         </div>
     </section>

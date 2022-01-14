@@ -3,8 +3,8 @@ template.innerHTML= `
     <link rel="stylesheet" href="styles/main.css">
     <div class="recipe">
         <h2></h2>
-        <div class="container">
-            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        <div class="recipe_container">
+            <iframe class="recipe_embed" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
         </div>
     </div>
     

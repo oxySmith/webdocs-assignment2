@@ -5,8 +5,8 @@ template.innerHTML= `
     <link rel="stylesheet" href="styles/main.css">
     <header class="header">
         <a href="index.html" class="header_logo">
-            <img class="logo" height="100" width="500" src="images/logo/white.png" alt="logo" />
-            <span class="logo_text">
+            <img class="header_logo_img" height="100" width="500" src="images/logo/white.png" alt="logo" />
+            <span class="header_logo_text">
                 Cottbus Delivery
             </span>
             
