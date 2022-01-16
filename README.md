@@ -22,3 +22,10 @@ Olamilekan's work
 4. Delivery(HTML and CSS)
 5. Products(HTML and CSS)
 6. Product Detail pages(HTML and CSS)
+
+Bilal Koraish's work:
+1. Terms(HTML and CSS)
+2. Writeus(HTML and CSS)
+3. About(HTML and CSS)
+4. Contact(HTML and CSS)
+5. Slideshow component (JS)
