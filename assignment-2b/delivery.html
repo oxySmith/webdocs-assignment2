@@ -17,8 +17,8 @@
                 <div>
                     <form action="#">
                         <div class="form_element">
-                            <label class="form_element_label" for="title">Title</label>
-                            <select id="country" name="title">
+                            <label class="form_element_label" for="salutation">Title</label>
+                            <select id="salutation" name="title">
                                 <option value="mr">Mr</option>
                                 <option value="ms">Mrs</option>
                                 <option value="ms">Ms</option>
@@ -27,17 +27,17 @@
                         
                         <div class="form_element">
                             <label class="form_element_label" for="name">First Name</label>
-                            <input type="text"  name="name" placeholder="Name">
+                            <input type="text" id="name" placeholder="Name">
                         </div>
 
                         <div class="form_element">
                             <label class="form_element_label" for="email">Last Name</label>
-                            <input type="text"  name="email" placeholder="Email">
+                            <input type="text" id="email" placeholder="Email">
                         </div>
 
                         <div class="form_element">
-                            <label class="form_element_label" for="phone number">Phone Number</label>
-                            <input type="text"  name="phone number" placeholder="Phone number">
+                            <label class="form_element_label" for="phone_number">Phone Number</label>
+                            <input type="text" id="phone_number" placeholder="Phone number">
                         </div>
                         
                     
@@ -47,33 +47,34 @@
                             <h3>Delivery Options</h3>
                             <div class="form_element">
                                 <label for="delivery" class="form_element_label">Delivery</label>
-                                <input type="radio" id="html" name="delivery" value="Delivery">
+                                <input type="radio" id="delivery" value="Delivery">
                                 <label for="pickup" class="form_element_label">Self Pick up</label>
-                                <input type="radio"  name="pickup" value="pickup">
+                                <input type="radio" id="pickup" value="pickup">
                             </div>
                             <div class="form_element">
                                 <label for="time" class="form_element_label">Delivery:</label>
-                                <input type="date" name="name">
+                                <input type="date" id="time">
                             </div>
                             <div class="form_element">
                                 <div class="form_element">
-                                    <input type="radio"  name="time1">
+                                    <input type="radio"  id="time1">
                                     <label class="form_element_label" for="time1">8AM - 12PM</label>
                                 </div>
                                 <div class="form_element">
-                                    <input type="radio"  name="time2">
-                                    <label class="form_element_label" for="time1">12AM - 18PM</label>
+                                    <input type="radio"  id="time2">
+                                    <label class="form_element_label" for="time2">12AM - 18PM</label>
                                 </div>
                                 <div class="form_element">
-                                    <input type="radio"  name="time3">
+                                    <input type="radio"  id="time3">
                                     <label class="form_element_label" for="time3">18PM - 22PM</label>
                                 </div>
                             </diV>
                         </div>
 
                         <br />
-                        <div>
-                            <textarea class="form_textarea"  name="textArea">
+                        <div class="form_element">
+                            <label class="form_element_label" for="comments">comments: </label>
+                            <textarea class="form_textarea" id="comments">
                 
                             </textarea>
                         </div>
