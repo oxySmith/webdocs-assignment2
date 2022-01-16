@@ -16,7 +16,7 @@ class RecipeVideo extends HTMLElement {
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.shadowRoot.querySelector('h2').innerText = this.getAttribute('header');
-        this.shadowRoot.querySelector('.responsive-iframe').src = `https://www.youtube.com/embed/${this.getAttribute('id')}`;
+        this.shadowRoot.querySelector('.recipe_embed').src = `https://www.youtube.com/embed/${this.getAttribute('id')}`;
     }
 }
 
