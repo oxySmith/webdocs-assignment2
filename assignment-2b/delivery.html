@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Request Delivery</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,8 +17,8 @@
                 <div>
                     <form action="#">
                         <div class="form_element">
-                            <label for="country">Title</label>
-                            <select id="country" name="country">
+                            <label class="form_element_label" for="title">Title</label>
+                            <select id="country" name="title">
                                 <option value="mr">Mr</option>
                                 <option value="ms">Mrs</option>
                                 <option value="ms">Ms</option>
@@ -26,18 +26,18 @@
                         </div>
                         
                         <div class="form_element">
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Name">
+                            <label class="form_element_label" for="name">First Name</label>
+                            <input type="text"  name="name" placeholder="Name">
                         </div>
 
                         <div class="form_element">
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Email">
+                            <label class="form_element_label" for="email">Last Name</label>
+                            <input type="text"  name="email" placeholder="Email">
                         </div>
 
                         <div class="form_element">
-                            <label for="lname">Phone Number</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Phone number">
+                            <label class="form_element_label" for="phone number">Phone Number</label>
+                            <input type="text"  name="phone number" placeholder="Phone number">
                         </div>
                         
                     
@@ -46,34 +46,34 @@
                         <div>
                             <h3>Delivery Options</h3>
                             <div class="form_element">
-                                <label>Delivery</label>
-                                <input type="radio" id="html" name="fav_language" value="HTML">
-                                <label>Self Pick up</label>
-                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                <label for="delivery" class="form_element_label">Delivery</label>
+                                <input type="radio" id="html" name="delivery" value="Delivery">
+                                <label for="pickup" class="form_element_label">Self Pick up</label>
+                                <input type="radio"  name="pickup" value="pickup">
                             </div>
                             <div class="form_element">
-                                <label for="birthday">Delivery:</label>
-                                <input type="date" id="birthday" name="birthday">
+                                <label for="time" class="form_element_label">Delivery:</label>
+                                <input type="date" name="name">
                             </div>
                             <div class="form_element">
                                 <div class="form_element">
-                                    <input type="radio" id="html" name="fav_language" value="HTML">
-                                    <label>8AM - 12PM</label>
+                                    <input type="radio"  name="time1">
+                                    <label class="form_element_label" for="time1">8AM - 12PM</label>
                                 </div>
                                 <div class="form_element">
-                                    <input type="radio" id="html" name="fav_language" value="HTML">
-                                    <label>12AM - 18PM</label>
+                                    <input type="radio"  name="time2">
+                                    <label class="form_element_label" for="time1">12AM - 18PM</label>
                                 </div>
                                 <div class="form_element">
-                                    <input type="radio" id="html" name="fav_language" value="HTML">
-                                    <label>18PM - 22PM</label>
+                                    <input type="radio"  name="time3">
+                                    <label class="form_element_label" for="time3">18PM - 22PM</label>
                                 </div>
                             </diV>
                         </div>
 
                         <br />
                         <div>
-                            <textarea class="form_textarea" id="w3review" name="w3review">
+                            <textarea class="form_textarea"  name="textArea">
                 
                             </textarea>
                         </div>
