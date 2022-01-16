@@ -20,6 +20,7 @@ class ProductCard extends HTMLElement {
         this.shadowRoot.querySelector('.card_name').innerText = this.getAttribute('name');
         this.shadowRoot.querySelector('.card_price').innerHTML = "&#8364;" + this.getAttribute('price') + "/" + this.getAttribute('unit');
         this.shadowRoot.querySelector('.card_image').src =`images/${this.getAttribute('name').toLowerCase()}.jpg`;
+        this.shadowRoot.querySelector('.card_image').alt = this.getAttribute('name');
 
         this.shadowRoot.querySelector('.card_name').href = this.getAttribute('link') ? this.getAttribute('link') : "#";
         
