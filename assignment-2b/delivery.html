@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Request Delivery</title>
+    <link rel="stylesheet" href="styles/main.css">
+   
+</head>
+<body>
+    <app-header></app-header> 
+        <app-body>
+            <section>
+                <div><h3>Request Delivery</h3></div>
+                <div><p>Please leave your contact information, your desired delivery/pickup date and time and tell us what you want to buy in the message box. We will contact you via phone or email to confirm your request during our working hour as soon as possible.</p></div>
+                <div>
+                    <form action="#">
+                        <div class="form_element">
+                            <label class="form_element_label" for="title">Title</label>
+                            <select id="country" name="title">
+                                <option value="mr">Mr</option>
+                                <option value="ms">Mrs</option>
+                                <option value="ms">Ms</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form_element">
+                            <label class="form_element_label" for="name">First Name</label>
+                            <input type="text"  name="name" placeholder="Name">
+                        </div>
+
+                        <div class="form_element">
+                            <label class="form_element_label" for="email">Last Name</label>
+                            <input type="text"  name="email" placeholder="Email">
+                        </div>
+
+                        <div class="form_element">
+                            <label class="form_element_label" for="phone number">Phone Number</label>
+                            <input type="text"  name="phone number" placeholder="Phone number">
+                        </div>
+                        
+                    
+                        <br />
+
+                        <div>
+                            <h3>Delivery Options</h3>
+                            <div class="form_element">
+                                <label for="delivery" class="form_element_label">Delivery</label>
+                                <input type="radio" id="html" name="delivery" value="Delivery">
+                                <label for="pickup" class="form_element_label">Self Pick up</label>
+                                <input type="radio"  name="pickup" value="pickup">
+                            </div>
+                            <div class="form_element">
+                                <label for="time" class="form_element_label">Delivery:</label>
+                                <input type="date" name="name">
+                            </div>
+                            <div class="form_element">
+                                <div class="form_element">
+                                    <input type="radio"  name="time1">
+                                    <label class="form_element_label" for="time1">8AM - 12PM</label>
+                                </div>
+                                <div class="form_element">
+                                    <input type="radio"  name="time2">
+                                    <label class="form_element_label" for="time1">12AM - 18PM</label>
+                                </div>
+                                <div class="form_element">
+                                    <input type="radio"  name="time3">
+                                    <label class="form_element_label" for="time3">18PM - 22PM</label>
+                                </div>
+                            </diV>
+                        </div>
+
+                        <br />
+                        <div>
+                            <textarea class="form_textarea"  name="textArea">
+                
+                            </textarea>
+                        </div>
+                      
+                        <input type="submit" value="Submit">
+                      </form>
+                </div>
+            </section>
+        </app-body>
+    <app-footer></app-footer>
+    
+   
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/appBody.js"></script>
+    <script src="components/breadcrumbs.js"></script>
+    <script src="components/productDetail.js"></script>
+    
+    
+</body>
+</html>

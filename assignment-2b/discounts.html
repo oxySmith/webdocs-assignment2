@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Discounts</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <app-header></app-header> 
+    <app-body>
+        <div class="birthday_box">
+            <div class="birthday_box_info">
+                <h2>Happy birthday special offer!</h2>
+                <p>If you order products for at least 15 Euros on the day of your birthday or week after - you will receive a free cake as a present from our company with your order.</p>
+            </div>
+            <img height="400" width="400" alt="Birthday Cake" src="images/cake.jpg" />
+        </div>
+        <hero-image 
+            header="Delivery special offer!" 
+            text="Order products 4 times using our website and get the 5th delivery for free!"
+            btn-text="Go to Shop"
+            btn-link="delivery.html"
+            bg="foodstore"
+        >
+        </hero-image>
+        <section>
+            <div class="section-header"><h2>Discounts of the Week</h2></div>
+            <div class="grid-section">
+                <product-card name="Cucumber" price="0.60" unit="pc" discount="-20%"></product-card>
+                <product-card name="Pumpkin" price="3.50" unit="pc" discount="-30%"></product-card>
+                <product-card name="Avocado" price="1.50" unit="pc" discount="-40%"></product-card>
+                <product-card name="Tomato" price="1.50" unit="pc" discount="-20%"></product-card>
+                <product-card name="Ribs" price="1.50" unit="pc" discount="-10%"></product-card>
+
+            </div>
+        </section>
+    </app-body>
+    <app-footer></app-footer>
+    
+   
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/productCard.js"></script>
+    <script src="components/heroImage.js"></script>
+    <script src="components/appBody.js"></script>
+    
+    
+</body>
+</html>

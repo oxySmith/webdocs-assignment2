@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cottbus Delivery</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <app-header></app-header> 
+    <app-body>
+        <hero-image 
+            header="Discount of the week!" 
+            text="A variety of cheese from local farms is on sale, including cheese for cheese fondue, raclette and many more
+            other delicious dishes... Don't miss the chance!"
+            btn-text="View discounts"
+            btn-link="discounts.html"
+            bg="foodstore"
+        >
+        </hero-image>
+        <hero-image 
+            header="Christmas Food Ideas!" 
+            text="Looking for new dishes for this Christmas? We have some simple but tasty food ideas that you and your loved ones will probably love!"
+            btn-text="View Recipes"
+            btn-link="recipes.html"
+            bg="foodstore2"
+        >
+        </hero-image>
+        <section>
+            <div class="section-header"><h2>Most frequently bought items</h2></div>
+            <div class="grid-section">
+                <product-card name="Cucumber" price="0.60" unit="pc"></product-card>
+                <product-card name="Pumpkin" price="3.50" unit="pc"></product-card>
+                <product-card name="Avocado" price="1.50" unit="pc"></product-card>
+                <product-card name="Tomato" price="1.50" unit="pc"></product-card>
+                <product-card name="Ribs" price="1.50" unit="pc"></product-card>
+                <product-card name="Eggs" price="1.50" unit="pc"></product-card>
+                <product-card name="Spinach" price="1.50" unit="pc"></product-card>
+                <product-card name="Chicken" price="1.50" unit="pc"></product-card>
+                <product-card name="Grapes" price="1.50" unit="pc"></product-card>
+                <product-card name="Salmon" price="1.50" unit="pc"></product-card>
+            </div>
+        </section>
+    </app-body>
+    <app-footer></app-footer>
+    
+   
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/productCard.js"></script>
+    <script src="components/heroImage.js"></script>
+    <script src="components/appBody.js"></script>
+</body>
+</html>
