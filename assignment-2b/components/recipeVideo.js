@@ -4,7 +4,7 @@ template.innerHTML= `
     <div class="recipe">
         <h2></h2>
         <div class="recipe_container">
-            <iframe class="recipe_embed" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            <iframe title="" allowfullscreen="true" class="recipe_embed" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
         </div>
     </div>
     
@@ -17,6 +17,7 @@ class RecipeVideo extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.shadowRoot.querySelector('h2').innerText = this.getAttribute('header');
         this.shadowRoot.querySelector('.recipe_embed').src = `https://www.youtube.com/embed/${this.getAttribute('id')}`;
+        this.shadowRoot.querySelector('.recipe_embed').title = this.getAttribute('header');
     }
 }
 
