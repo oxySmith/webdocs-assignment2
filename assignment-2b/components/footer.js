@@ -15,7 +15,7 @@ template.innerHTML= `
             </div>
             <div class="footer_work">
                 <span>Do you want to work with us ? Join our team!</span>
-                <a href="mailto:">career@cottbus.delivery</a>
+                <a href="mailto:career@cottbus.delivery">career@cottbus.delivery</a>
             </div>
        </div>
        <div class="footer_bottom">
