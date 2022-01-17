@@ -3,6 +3,10 @@ html{
     font-size: 16px;
 }
 
+.write_us{
+    margin: 4rem auto;
+}
+
 .contact_page {
     display: flex;
     align-items: center;
@@ -15,6 +19,7 @@ html{
 }
 .contact_details_item{
     margin: 0.5rem 0;
+    overflow-wrap: break-word;
 }
 .contact_details_item_title{
     font-weight: bold;
@@ -27,6 +32,15 @@ html{
         margin-right: 0;
     }
 }
+@media screen and (max-width:400px) {
+    .contact_img{
+        display: none;
+    }
+    .contact_page {
+        flex-direction: column;
+        align-items: unset;
+    }
+}
 
 .form_element {
     display: flex;
@@ -34,6 +48,17 @@ html{
 }
 .form_element_label{
     margin-right: 0.5rem;
+}
+
+.form_element_input{
+    width: 25%;
+}
+
+@media screen and (max-width:400px) {
+    .form_element_input{
+        width: 50%;
+    }
+    
 }
 .form_textarea {
     height: 10rem;
