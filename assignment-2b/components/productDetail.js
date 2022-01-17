@@ -90,7 +90,7 @@ class ProductDetail extends HTMLElement {
                     this.shadowRoot.getElementById(key).innerHTML = "&#8364;" + product["price"] + "/" + product["unit"]
                 }
                 if(key == "name"){
-                    document.title = product["name"]
+                    document.title = product["name"] + "|Cottbus Delivery"
                 }
             }
             if(key == "src"){

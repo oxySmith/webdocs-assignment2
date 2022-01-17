@@ -9,7 +9,39 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Write us</title>
+      <title>Write us|Cottbus Delivery</title>
+      <meta charset="UTF-8" name="description" content="Do you have any questions ? Write us!" />
+      <script type="application/ld+json">
+        {
+          "@context" : "https://schema.org",
+          "@type": "BreadcrumbList",
+          "description": "Do you have any questions ? Write us!",
+          "itemListElement":
+          [
+              {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Homepage",
+                  "item": "https://oxysmith.github.io/webdocs-assignment2/assignment-2b/index.html"
+
+              },
+              {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Contact us",
+                  "item": "https://oxysmith.github.io/webdocs-assignment2/assignment-2b/contact.html"
+
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Write us",
+                "item": "https://oxysmith.github.io/webdocs-assignment2/assignment-2b/writeus.html"
+
+            }
+          ]
+      }
+    </script>
       <link rel="stylesheet" href="styles/main.css">
    
   </head>
@@ -18,42 +50,35 @@
     <app-header></app-header>
     <app-body>
       <section>
-        <div>
          <app-crumbs page-name="Write Us"></app-crumbs>
           <div>
             <p>Feel free to use our contact form with any questions, concerns, ideas. We are looking forward to hear from you.</p>
           </div>
 
+          <form action="#">
+            <div class="form_element">
+              <label class="form_element_label" for="email">Email</label>
+              <input type="text" id="email" size="40" placeholder="Your email">
+            </div>
 
-          <div class="form_element">
-            <label class="form_element_label" for="email">Email</label>
-            <input type="text" id="email" size="40" placeholder="Your email">
-          </div>
+            <div class="form_element">
+              <label class="form_element_label" for="name">Name</label>
+              <input type="text" id="name" size="40" placeholder="Your name">
+            </div>
 
-          <div class="form_element">
-            <label class="form_element_label" for="name">Name</label>
-            <input type="text" id="name" size="40" placeholder="Your name">
-          </div>
+            <div class="form_element">
+              <label class="form_element_label" for="subject"> Subject</label>
+              <input type="text" id="subject" size="40" placeholder="Subject">
+            </div>
+            <div class="form_element">
+              <label class="form_element_label" for="comments">comments: </label>
+              <textarea class="form_textarea" id="comments">
 
-          <div class="form_element">
-            <label class="form_element_label" for="subject"> Subject</label>
-            <input type="text" id="subject" size="40" placeholder="Subject">
-          </div>
-          <br />
-        </diV>
-        </div>
+              </textarea>
+            </div>
 
-        <br />
-        <div class="form_element">
-          <label class="form_element_label" for="comments">comments: </label>
-          <textarea class="form_textarea" id="comments">
-
-          </textarea>
-        </div>
-
-        <input type="submit" value="Submit">
+            <input type="submit" value="Submit">
         </form>
-        </div>
       </section>
     </app-body>
     <app-footer></app-footer>

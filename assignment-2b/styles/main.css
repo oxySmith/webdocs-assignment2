@@ -13,9 +13,18 @@ html{
 .contact_img{
     margin-right: 5rem;
 }
+.contact_details_item{
+    margin: 0.5rem 0;
+}
+.contact_details_item_title{
+    font-weight: bold;
+}
 @media screen and (max-width: 892px) {
-    .contact {
+    .contact_page {
         flex-direction: column;
+    }
+    .contact_img{
+        margin-right: 0;
     }
 }
 

@@ -23,6 +23,7 @@ Olamilekan's work
 5. Products(HTML and CSS)
 6. Product Detail pages(HTML and CSS)
 7. CSS Refactoring
+8. SEO
 
 Bilal Koraish's work:
 
