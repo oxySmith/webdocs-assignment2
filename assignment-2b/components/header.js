@@ -4,7 +4,7 @@ var template = document.createElement('template')
 template.innerHTML= `
     <link rel="stylesheet" href="styles/main.css">
     <header class="header">
-        <a href="index.html" class="header_logo">
+        <a href="index.html" class="header_logo" tabindex="-1">
             <img class="header_logo_img" height="100" width="500" src="images/logo/white.png" alt="logo" />
             <span class="header_logo_text">
                 Cottbus Delivery
@@ -12,7 +12,7 @@ template.innerHTML= `
             
         </a>
         <nav class="header_links">
-            <a class="header_link home" href="index.html">Home</a>
+            <a tabindex="0" class="header_link home" href="index.html">Home</a>
             <a class="header_link about" href="about.html">About </a>
             <a class="header_link discounts" href="discounts.html">Discounts </a>
             <a class="header_link products" href="products.html">Products </a>
