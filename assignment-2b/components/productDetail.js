@@ -80,9 +80,10 @@ class ProductDetail extends HTMLElement {
         let link =  window.location.href;
         //find the id in lit 
         link = link.split('/');
-        let page = link[link.length - 1].split(".")[0];
-        const product = products.find(p => p.id == page);
-        
+        let page = link[link.length - 1].split(".")[0].trim().replace("-", " ").toLowerCase();
+
+        const product = products.find(p => p.name.toLowerCase() == page);
+        console.log(product, page)
         Object.keys(product).map((key) => {
             if(this.shadowRoot.getElementById(key)){
                 this.shadowRoot.getElementById(key).innerText = product[key]

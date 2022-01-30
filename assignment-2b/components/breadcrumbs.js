@@ -49,19 +49,19 @@ const routes = [
     },
     {
         name: "Avocado",
-        route: "0001.html"
+        route: "avocado.html"
     },
     {
         name: "Salmon",
-        route: "0002.html"
+        route: "salmon.html"
     },
     {
         name: "Organic Milk",
-        route: "0003.html"
+        route: "milk.html"
     },
     {
         name: "Apple",
-        route: "0004.html"
+        route: "apple.html"
     },
 ]
 
