@@ -3,9 +3,8 @@ template.innerHTML= `
     <link rel="stylesheet" href="styles/main.css">
     <nav aria-label="Breadcrumb" class="breadcrumb">
         <ul class="breadcrumb_list">
-            <li class="breadcrumb_list_item"><a id="breadcrumb-1" href="index.html">Home</a></li>
-            <li class="breadcrumb_list_item"><a id="breadcrumb-2" href="products.html">Products</a></li>
-            <li class="breadcrumb_list_item" id="breadcrumb-3"></li>
+            <li class="breadcrumb_list_item"><a id="breadcrumb-1" href="#"></a></li>
+            <li class="breadcrumb_list_item" id="breadcrumb-2"></li>
         </ul>
     </nav>
     
@@ -24,7 +23,46 @@ const routes = [
         name: "Contact Us",
         route: "contact.html"
     },
-
+    {
+        name: "Write Us",
+        route: "writeus.html"
+    },
+    {
+        name: "Terms and Condtions",
+        route: "terms.html"
+    },
+    {
+        name: "Delivery",
+        route: "delivery.html"
+    },
+    {
+        name: "Recipes",
+        route: "recipes.html"
+    },
+    {
+        name: "About Us",
+        route: "about.html"
+    },
+    {
+        name: "About Us",
+        route: "about.html"
+    },
+    {
+        name: "Avocado",
+        route: "0001.html"
+    },
+    {
+        name: "Salmon",
+        route: "0002.html"
+    },
+    {
+        name: "Organic Milk",
+        route: "0003.html"
+    },
+    {
+        name: "Apple",
+        route: "0004.html"
+    },
 ]
 
 class Breadcrumbs extends HTMLElement {
@@ -38,26 +76,23 @@ class Breadcrumbs extends HTMLElement {
     }
 
     onMount(){
-        switch (this.getAttribute('page-name')) {
-            case "Write Us":
-                this.shadowRoot.getElementById('breadcrumb-1').innerText = "Home"
-                this.shadowRoot.getElementById('breadcrumb-1').href = "index.html"
+        console.log(document.referrer, document)
+        console.log()
+        const referrerPage = this.getRoute(document.referrer);
+        const currentPage = this.getRoute(window.location.href);
+        if(referrerPage &&  currentPage.name !== referrerPage.name){
+            this.shadowRoot.getElementById('breadcrumb-1').innerText = referrerPage.name
+            this.shadowRoot.getElementById('breadcrumb-1').href = referrerPage.route
 
-                this.shadowRoot.getElementById('breadcrumb-2').innerText = "Contact Us"
-                this.shadowRoot.getElementById('breadcrumb-2').href = "contact.html"
-
-                this.shadowRoot.getElementById('breadcrumb-3').innerText = this.getAttribute('page-name');
-                break;
-            default:
-                this.shadowRoot.getElementById('breadcrumb-1').innerText = "Home"
-                this.shadowRoot.getElementById('breadcrumb-1').href = "index.html"
-
-                this.shadowRoot.getElementById('breadcrumb-2').innerText = "Products"
-                this.shadowRoot.getElementById('breadcrumb-2').href = "products.html"
-
-                this.shadowRoot.getElementById('breadcrumb-3').innerText = this.getAttribute('page-name');
-                break;
+            this.shadowRoot.getElementById('breadcrumb-2').innerText = currentPage.name
+            // this.shadowRoot.getElementById('breadcrumb-2').href = "contact.html"
+        }else{
+            this.shadowRoot.querySelector('.breadcrumb_list').style.display= 'none';
         }
+    }
+
+    getRoute(link){
+        return routes.find((route) => link.includes(route.route))
     }
 
 }
