@@ -1,6 +1,6 @@
 var template = document.createElement('template')
 template.innerHTML= `
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css" />
     <nav aria-label="Breadcrumb" class="breadcrumb">
         <ul class="breadcrumb_list">
             <li class="breadcrumb_list_item"><a id="breadcrumb-1" href="#"></a></li>

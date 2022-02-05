@@ -2,7 +2,7 @@
 
 var template = document.createElement('template')
 template.innerHTML= `
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css" />
     <header class="header">
         <a href="index.html" class="header_logo" tabindex="-1">
             <img class="header_logo_img" height="100" width="500" src="images/logo/white.png" alt="logo" />
