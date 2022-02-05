@@ -6,32 +6,31 @@ template.innerHTML= `
     
       <!-- Full-width images with number and caption text -->
       <div class="slideshow fade">
-        <div class="slideshow_number">1 / 3</div>
         <img src="images/apple.jpg" class="slideshow_img" width="200" height="400" alt="apple"/>
       </div>
     
       <div class="slideshow fade">
-        <div class="slideshow_number">2 / 3</div>
        <img src="images/eggs.jpg" class="slideshow_img" width="200" height="400" alt="eggs"/>
       </div>
     
       <div class="slideshow fade">
-        <div class="slideshow_number">3 / 3</div>
         <img src="images/cake.jpg" class="slideshow_img" width="200" height="400" alt="cake"/>
       </div>
-    
-      <!-- Next and previous buttons -->
-      <a class="slideshow_prev">&#10094;</a>
-      <a class="slideshow_next">&#10095;</a>
+      <!-- The dots/circles -->
+      <div class="slideshow_control">
+          <a class="slideshow_prev">&#10094;</a>
+          <div class="slideshow_indicators">
+              <span class="slideshow_dot"></span>
+              <span class="slideshow_dot"></span>
+              <span class="slideshow_dot"></span>
+          </div>
+          <a class="slideshow_next">&#10095;</a>
+      </div>
     </div>
     <br>
     
-    <!-- The dots/circles -->
-    <div class="slideshow_indicators">
-      <span class="slideshow_dot"></span>
-      <span class="slideshow_dot"></span>
-      <span class="slideshow_dot"></span>
-    </div>
+    
+    
 `
 
 class Slideshow extends HTMLElement {
