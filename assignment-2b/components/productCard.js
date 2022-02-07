@@ -3,7 +3,7 @@ template.innerHTML= `
     <link rel="stylesheet" href="styles/main.css" />
     <div class="card">
         <div class="card_discount"></div>
-        <img class="card_image" width="250" height="150" src="" alt="Food image"/>
+        <img class="card_image" width="150" height="150" src="" alt="Food image"/>
         <div class="card_container">
             <a class="card_name" href="#"></a>
             <span class="card_price">&#8364;1,50</span>
