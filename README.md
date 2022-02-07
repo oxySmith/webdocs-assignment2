@@ -34,3 +34,6 @@ Bilal Koraish's work:
 5. Slideshow component (JS)
 6. CSS Refactoring
 7. Favicon generation and implementation.
+
+
+Accessibility by Olamilekan, SEO by Bilal.
