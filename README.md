@@ -35,5 +35,4 @@ Bilal Koraish's work:
 6. CSS Refactoring
 7. Favicon generation and implementation.
 
-
-Accessibility by Olamilekan, SEO by Bilal.
+Accessibility by Olamilekan, SEO by Bilal/Olamilekan.

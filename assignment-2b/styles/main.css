@@ -378,6 +378,7 @@ header {
 }
 .product_detail_img {
     height: 25rem;
+    width: 20rem;
     border-radius: 0.5rem;
 }
 .product_detail_info {

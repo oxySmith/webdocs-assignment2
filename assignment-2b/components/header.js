@@ -30,7 +30,7 @@ template.innerHTML= `
 
     <div id="myNav" class="overlay">
 
-        <a href="javascript:void(0)" id="closebtn">&times;</a>
+        <a href="index.html" id="closebtn">&times;</a>
         <nav class="overlay-content">
             <a class="header_link home" href="index.html">Home</a>
             <a class="header_link about" href="about.html">About </a>
