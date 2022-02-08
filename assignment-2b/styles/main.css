@@ -19,10 +19,16 @@ html{
 }
 .contact_details_item{
     margin: 0.5rem 0;
+    padding: 0.5rem 0;
     overflow-wrap: break-word;
 }
 .contact_details_item_title{
     font-weight: bold;
+}
+
+.contact_sub_item{
+    padding: 0.5rem 0;
+
 }
 @media screen and (max-width: 892px) {
     .contact_page {
@@ -513,4 +519,8 @@ header {
     to {
         opacity: 1;
     }
+}
+
+.credit{
+    font-size: 0.9rem
 }
